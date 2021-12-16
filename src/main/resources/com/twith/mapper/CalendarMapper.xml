@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.twith.mapper.CalendarMapper">
+	<select id="getDetail" resultType="com.twith.domain.CalendarDTO">
+		SELECT * FROM CALENDAR WHERE CALDATE=TO_DATE(#{caldate}, 'YYYYMMDD') AND USERNUM=#{usernum}
+	</select>
+	
+	<select id="getImg" resultType="com.twith.domain.CalImgDTO">
+		SELECT * FROM CALIMG WHERE CALDATE=TO_DATE(#{caldate}, 'YYYYMMDD') AND USERNUM=#{usernum}
+	</select>
+	
+	<insert id="addDate">
+		INSERT INTO CALENDAR VALUES(
+			TO_DATE(#{caldate}, 'YYYYMMDD'),
+			#{usernum},
+			#{title},
+			#{contents}
+		)
+	</insert>
+	
+	<insert id="addImg">
+        INSERT INTO CALIMG VALUES(
+        	#{usernum}, TO_DATE(#{caldate}, 'YYYYMMDD'), #{imgorgname}, #{imgsavename}
+        )
+	</insert>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
