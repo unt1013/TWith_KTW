@@ -17,9 +17,9 @@
 
 ## Main
 
+![image-20211216144438578](https://user-images.githubusercontent.com/29967386/146339577-00a23ff4-9353-40d0-8513-e2f10c5489aa.png)
 
-
-- ![image-20211216144438578](C:\ITA\1900_web_ktw\Spring\workspace\TWith\readmeImg\image-20211216144438578.png)calendar/main 화면입니다. 해당하는 부분의 Controller 코드입니다.
+- calendar/main 화면입니다. 해당하는 부분의 Controller 코드입니다.
 
   ```` java
   @GetMapping("/main")
@@ -80,13 +80,13 @@
 
 ## DateDetail
 
-![image-20211216150506839](C:\ITA\1900_web_ktw\Spring\workspace\TWith\readmeImg\image-20211216150506839.png)
+![image-20211216150506839](https://user-images.githubusercontent.com/29967386/146339595-c1634315-2bef-4a93-a763-b58701544cc6.png)
 
 - main에서 특정 날짜를 입력시, 해당 날짜의 내용이 없을 때 이동하는 화면입니다.
 
 - 제목과 내용을 입력할 수 있는 공간이 있고 오른쪽의 add 버튼을 클릭시 이미지를 첨부할 수 있습니다.
 
-  ![image-20211216164417025](C:\ITA\1900_web_ktw\Spring\workspace\TWith\readmeImg\image-20211216164417025.png)
+  ![image-20211216164417025](https://user-images.githubusercontent.com/29967386/146339596-7cd4fb9c-afce-422c-94e8-c018fce98459.png)
 
 - 아래에는 첨부된 이미지를 확인할 수 있게 작은 이미지를 출력하고, 클릭시 업로드 목록에서 제외합니다.
 
@@ -205,13 +205,13 @@
 
 - Main화면에서 내용이 적힌 날짜를 클릭하는 것으로 확인할 수 있습니다.
 
-  ![image-20211216171445950](C:\ITA\1900_web_ktw\Spring\workspace\TWith\readmeImg\image-20211216171445950.png)
+  ![image-20211216171445950](https://user-images.githubusercontent.com/29967386/146340399-0dbdb7e3-9029-4fd5-8f8f-a7b7956b5349.png)
 
 - 차례대로 아까 적은 제목, 내용, 그리고 이미지가 삽입된 것을 확인할 수 있습니다.
 
 - 이미지의 경우 클릭시 크게 확인할 수 있습니다.
 
-  ![image-20211216171610857](C:\ITA\1900_web_ktw\Spring\workspace\TWith\readmeImg\image-20211216171610857.png)
+  ![image-20211216171610857](https://user-images.githubusercontent.com/29967386/146339681-6cc1a2ce-1984-42aa-ac97-b7f271d335b9.png)
 
 - 클릭한 이미지가 상단의 공간에 큰 화면으로 출력됩니다.
 
